@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Added screenshots and a "How it works" section to the README.
+
 ## 0.1.0
 
 - Initial release.

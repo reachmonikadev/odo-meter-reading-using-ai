@@ -4,6 +4,18 @@
 
 Flutter module: capture an odometer photo → on-device blur check → Gemini extraction → business validation → typed `OdometerReading`.
 
+## How it works
+
+1. **Capture**: the user takes a photo or picks one from the gallery.
+2. **On-device check**: blurry photos are rejected right away, without a network call.
+3. **AI extraction**: Gemini reads the odometer value and unit, and flags screens, edits, glare or a missing odometer.
+4. **Validation**: your business rules run (previous reading, max reading, min confidence).
+5. **Result**: the user sees the verified reading and confirms it, or gets a clear reason with how-to-fix hints and retakes the photo.
+
+| Verified (mechanical) | Verified (digital) | Rejected (photo of a screen) | Rejected (edited image) |
+|:-:|:-:|:-:|:-:|
+| <img src="https://raw.githubusercontent.com/reachmonikadev/odo-meter-reading-using-ai/main/packages/odometer_scanner/screenshots/verified_mechanical.jpg" width="200" alt="Verified mechanical odometer"> | <img src="https://raw.githubusercontent.com/reachmonikadev/odo-meter-reading-using-ai/main/packages/odometer_scanner/screenshots/verified_digital.jpg" width="200" alt="Verified digital odometer"> | <img src="https://raw.githubusercontent.com/reachmonikadev/odo-meter-reading-using-ai/main/packages/odometer_scanner/screenshots/rejected_screen_photo.jpg" width="200" alt="Rejected photo of a screen"> | <img src="https://raw.githubusercontent.com/reachmonikadev/odo-meter-reading-using-ai/main/packages/odometer_scanner/screenshots/rejected_stock_image.jpg" width="200" alt="Rejected edited image"> |
+
 ## Install
 
 ```bash
