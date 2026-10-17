@@ -3,8 +3,8 @@ description: >-
   Flutter module that captures an odometer photo, checks image
   quality and extracts a validated odometer reading using Google Gemini.
 version: 0.1.0
-repository: https://github.com/codechapdev/validate-oddometer-reading/tree/main/packages/odometer_scanner
-issue_tracker: https://github.com/codechapdev/validate-oddometer-reading/issues
+repository: https://github.com/reachmonikadev/odo-meter-reading-using-ai/tree/main/packages/odometer_scanner
+issue_tracker: https://github.com/reachmonikadev/odo-meter-reading-using-ai/issues
 topics:
   - odometer
   - ocr
